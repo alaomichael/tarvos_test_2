@@ -110,7 +110,7 @@ export default [
     like:true,
     image:
       'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg',
-      sizes:['S','M','L']
+      sizes:['','M','L']
   },
   {
     id: 5,
@@ -120,7 +120,7 @@ export default [
     like:false,
     image:
       'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
-      sizes:['S','M','L']
+      sizes:['S','','L']
   }, {
     id: 6,
     name: 'Bertie Yates',
@@ -129,7 +129,7 @@ export default [
     like:true,
     image:
       'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg',
-      sizes:['S','M','L']
+      sizes:['S','M','']
   },
   {
     id: 7,
@@ -139,7 +139,7 @@ export default [
     like:false,
     image:
       'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-3_rxtqvi.jpg',
-      sizes:['S','M','L']
+      sizes:['','M','L']
   },
   {
     id: 8,
@@ -149,7 +149,7 @@ export default [
     like:true,
     image:
       'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg',
-      sizes:['S','M','L']
+      sizes:['S','','L']
   },
   {
     id: 9,
@@ -169,6 +169,6 @@ export default [
     like:true,
     image:
       'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
-      sizes:['S','M','L']
+      sizes:['S','M','']
   },
 ];
