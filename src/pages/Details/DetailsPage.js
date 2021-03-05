@@ -1,8 +1,24 @@
-import React, { Fragment } from "react";
+import React, { Fragment,useEffect,useState } from "react";
 import Navigation from '../../components/Nav';
 import { AiFillHeart,AiOutlineHeart } from 'react-icons/ai';
+import data from '../../data';
+import List from '../../List';
 
-const DetailsPage  = ({count,product}) => {
+
+const DetailsPage  = ({count}) => {
+  const [product,setProduct] = useState(data);
+const [newcount,setCount] = useState(0);
+const [url,setURL] = useState('');
+
+
+
+useEffect(
+()=> {
+  console.log(data[3]);
+setURL(url)},
+[url]
+)
+  
   return (
     <Fragment>
 <Navigation />
@@ -11,7 +27,7 @@ const DetailsPage  = ({count,product}) => {
         /* image = `href="${image}"` */
         return(
           <Fragment>  
-           <article key={id} className=''>
+        <article key={id} className=''>
       <img src={image} alt={name} className='product' />
         <h3 className="price">{name}</h3>
        {like ? <AiFillHeart  className="icon"  /> : <AiOutlineHeart className="icon"  />}
@@ -23,8 +39,11 @@ const DetailsPage  = ({count,product}) => {
         {sizes[2] ? <div id="three" className="size">{sizes[2]}</div> : ''}
         </div>          
            </article> 
-    <div>Clicked {count}</div>
-         
+           <button onClick={()=> setCount(newcount + 1)}> Click Me </button>
+           <div >Clicked {newcount}</div>
+
+      {/*      <button onClick={()=>setURL('https://xghel.csb.app')}> Goto Home </button>
+       */}   
           </Fragment>
         );
       } )}
