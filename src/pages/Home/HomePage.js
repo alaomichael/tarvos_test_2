@@ -13,7 +13,7 @@ const [newcount,setCount] = useState(0);
 return (
     <Fragment>
 <Navigation />
-    <main className='container'>
+<main className='container'>
   <section >
   <h3>{product.length} Available today</h3>
   <List product={product} onClick={() => setCount(newcount + 1)}/>

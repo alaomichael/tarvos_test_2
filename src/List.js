@@ -5,7 +5,7 @@ import { AiFillHeart,AiOutlineHeart } from 'react-icons/ai';
 const List = ({product}) => {
   return (
     <Fragment>
-      {product.map((product) => {
+      {product && product.map((product) => {
         let {id,name,pack,price,image,like,sizes} = product;
         /* image = `href="${image}"` */
         return(

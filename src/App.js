@@ -52,14 +52,10 @@ function App() {
     </div>
   </div>
   <Navigation />
-  <main >
-  <section className='container'>
-  <p>The item is clicked {count} times </p>
+  <main className='container'>
+  <section >
   <h3>{product.length} Available today</h3>
-  <List product={product} count={count} index={index} 
-  onClick={() => setCount(count + 1)} />
-  <Details count={count} product={product} index={index} 
-  onClick={() => setCount(count + 1)}/>
+  <List product={product} onClick={() => setCount(newcount + 1)}/>
   <button onClick={() => setProduct([])}>clear all</button>
   </section>
   </main>

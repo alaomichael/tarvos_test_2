@@ -77,10 +77,9 @@ padding:  20px 0px;
     opacity: 1;
   }
   .fa-bars {
-    /* display: none; */
+    display: none;
     color: #222;
     font-size: 2rem;
-    display: inline;    
   }
   nav {
     ul {
